@@ -16,7 +16,8 @@ public class AuthController {
     public AuthController(AuthService authService) {
         this.authService = authService;
     }
-@GetMapping("/print")
+
+    @GetMapping("/print")
      public String sendHi() {
         return authService.getWelcomeMessage();
     }
